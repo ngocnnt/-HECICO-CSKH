@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:local="clr-namespace:HECICO_CSKH.ViewModels.Search"              
+             x:Class="HECICO_CSKH.Views.Search.BieuDoDienNangTieuThu">
+   
+    <Grid BackgroundColor="White" >
+        <chart:SfChart VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <chart:SfChart.Title>
+                <chart:ChartTitle Text="BIỂU ĐỒ TIÊU THỤ" FontAttributes="Bold" TextColor="{StaticResource Primary}" FontSize="20"/>
+            </chart:SfChart.Title>
+            <chart:SfChart.Legend>
+                <chart:ChartLegend/>
+            </chart:SfChart.Legend>
+            <chart:SfChart.PrimaryAxis>
+                <chart:CategoryAxis>
+                    <chart:CategoryAxis.Title >
+                        <chart:ChartAxisTitle Text="Tháng" TextColor="{StaticResource Primary}" FontAttributes="Bold"/>
+                    </chart:CategoryAxis.Title>
+                    <chart:CategoryAxis.LabelStyle >
+                        <chart:ChartAxisLabelStyle TextColor="{StaticResource Primary}" FontSize="12"/>
+                    </chart:CategoryAxis.LabelStyle>
+                </chart:CategoryAxis>
+            </chart:SfChart.PrimaryAxis>
+            <chart:SfChart.SecondaryAxis>
+                <chart:NumericalAxis>
+                    <chart:NumericalAxis.LabelStyle >
+                        <chart:ChartAxisLabelStyle LabelFormat="#,###" TextColor="{StaticResource Primary}" FontSize="12"  />
+                    </chart:NumericalAxis.LabelStyle>
+                </chart:NumericalAxis>
+            </chart:SfChart.SecondaryAxis>
+
+            <chart:ColumnSeries x:Name="chart"  XBindingPath="THANG" 
+						YBindingPath="DIEN_TTHU" Label="Kwh" EnableTooltip="True">
+                <chart:ColumnSeries.DataMarker >
+                    <chart:ChartDataMarker>
+                        <chart:ChartDataMarker.LabelStyle>
+                            <chart:DataMarkerLabelStyle TextColor="{StaticResource Primary}" BackgroundColor="Transparent"
+                                                    FontSize="17"/>
+                        </chart:ChartDataMarker.LabelStyle>
+                    </chart:ChartDataMarker>
+                </chart:ColumnSeries.DataMarker>
+            </chart:ColumnSeries>
+
+        </chart:SfChart>
+    </Grid>
+</ContentPage>

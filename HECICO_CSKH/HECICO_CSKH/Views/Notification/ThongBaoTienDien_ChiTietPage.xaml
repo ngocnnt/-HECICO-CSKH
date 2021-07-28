@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             Shell.TabBarIsVisible="False"
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Views.Notification.ThongBaoTienDien_ChiTietPage">
+    <Shell.TitleView>
+        <Label Text="NỘI DUNG" HorizontalTextAlignment="Center" HorizontalOptions="Center"
+               Padding="-50,0,0,0"
+               FontSize="20"
+               FontAttributes="Bold"
+               Style="{StaticResource styleLableWhite}"
+               VerticalTextAlignment="Center"></Label>
+    </Shell.TitleView>
+    <Grid>
+        <Frame BorderColor="Black" Margin="10"  BackgroundColor="White">
+            <StackLayout >
+                <Label Text="THÔNG BÁO TIỀN ĐIỆN" FontSize="20"
+                   HorizontalOptions="FillAndExpand"
+                       Style="{StaticResource styleLable}"
+                       TextColor="Red"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+               
+                <Label x:Name="lblKyThanhToan"  FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Center"
+                   />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Khách hàng: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   
+                   HorizontalOptions="Start"                     
+                   />
+                    <Label Text="{Binding TEN_KHANG}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                           FontAttributes="Bold"
+                   HorizontalOptions="Start"                          
+                   />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="0">
+                    <Label Text="Mã khách hàng: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                     
+                   />
+                    <Label Text="{Binding MA_KHANG}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"   
+                           HorizontalTextAlignment="Start"
+                       FontAttributes="Bold"
+                   />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Địa chỉ: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"           
+                      
+                   />
+                    <Label Text="{Binding DCHI_KHANG}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                          
+                   />
+                </StackLayout>
+                
+               
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Điện năng tiêu thụ: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                     
+                   />
+                    <Label Text="{Binding DIEN_TTHU}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                          
+                   />
+                    <Label Text="kWh" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                     
+                   />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tiền điện: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"   
+                           HorizontalTextAlignment="Start"
+                   />
+                    <Label Text="{Binding TIEN_DIEN , StringFormat='{0:#,###}'}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                          
+                   />
+                    <Label Text=" đồng" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                       
+                   />
+                </StackLayout>
+                
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tiền thuế GTGT (10%): " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                        
+                   />
+                    <Label Text="{Binding TIEN_THUE , StringFormat='{0:#,###}'}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                          
+                   />
+                    <Label Text=" đồng" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                          
+                   />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tổng tiền: " FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"          
+                       FontAttributes="Bold"
+                   />
+                    <Label Text="{Binding TONG_TIEN , StringFormat='{0:#,###}'}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"           
+                           FontAttributes="Bold"
+                   />
+                    <Label Text=" đồng" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"          
+                       FontAttributes="Bold"
+                   />
+                </StackLayout>
+                <Label Text="{Binding TIEN_BANG_CHU}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                        
+                   />
+
+                <Label Text="Nếu Quý khách hàng đã thanh toán, vui lòng bỏ qua tin nhắn này." FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"                        
+                   />
+            </StackLayout>
+        </Frame>
+      
+    </Grid>
+</ContentPage>

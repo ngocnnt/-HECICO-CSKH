@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2F945C2-73B4-4FB5-AD98-65AFEFD63AAE}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HECICO_CSKH.Droid</RootNamespace>
+    <AssemblyName>HECICO_CSKH.Android</AssemblyName>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidKeyStore>false</AndroidKeyStore>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.DeviceInfo">
+      <Version>6.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="AndHUD">
+      <Version>1.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="CarouselView.FormsPlugin">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Naxam.StatusBarCompat.Android">
+      <Version>2.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.CurrentActivity">
+      <Version>2.1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.FirebasePushNotification">
+      <Version>3.3.10</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Extended">
+      <Version>1.60.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Svg">
+      <Version>1.60.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>2.80.2</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Buttons">
+      <Version>18.2.0.55</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
+      <Version>18.2.0.55</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart">
+      <Version>18.2.0.55</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
+      <Version>18.2.0.55</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.1.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Annotation.Experimental">
+      <Version>1.0.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat">
+      <Version>1.2.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat.AppCompatResources">
+      <Version>1.2.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.CardView">
+      <Version>1.0.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.0.4.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.CoordinatorLayout">
+      <Version>1.1.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Core">
+      <Version>1.3.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.CursorAdapter">
+      <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.DrawerLayout">
+      <Version>1.1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.DynamicAnimation">
+      <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Fragment">
+      <Version>1.3.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime">
+      <Version>2.3.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Palette">
+      <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView">
+      <Version>1.1.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Transition">
+      <Version>1.4.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.VectorDrawable">
+      <Version>1.1.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ViewPager2">
+      <Version>1.0.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>119.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Messaging">
+      <Version>121.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.3.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Dagger">
+      <Version>2.27.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>117.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>117.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
+      <Version>117.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net">
+      <Version>0.16.6</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile">
+      <Version>2.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile.Forms">
+      <Version>2.4.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MyFirebaseIIDService.cs" />
+    <Compile Include="MyFirebaseMessagingService.cs" />
+    <Compile Include="Renderer\FirebaseToken.cs" />
+    <Compile Include="Renderer\MessageAndroid.cs" />
+    <Compile Include="Renderer\ProcessLoading.cs" />
+    <Compile Include="Renderer\StatusBarRenderer.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\UIFontIcons.ttf" />
+    <AndroidAsset Include="Assets\Montserrat-Bold.ttf" />
+    <AndroidAsset Include="Assets\Montserrat-Medium.ttf" />
+    <AndroidAsset Include="Assets\Montserrat-Regular.ttf" />
+    <AndroidAsset Include="Assets\Montserrat-SemiBold.ttf" />
+    <AndroidAsset Include="Assets\Font Awesome 5 Free-Regular-400.otf" />
+    <GoogleServicesJson Include="google-services.json" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\tab_about.png" />
+    <AndroidResource Include="Resources\drawable\tab_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HECICO_CSKH\HECICO_CSKH.csproj">
+      <Project>{E1BFDA1E-669B-4243-8386-2A65B8D78D69}</Project>
+      <Name>HECICO_CSKH</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\gradient.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\startup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\cskh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\callme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tracuu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\thongbao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_tien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\catdien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\caidat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tracuughiso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\vitri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tracuucapdien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tracuudiennang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\thanhtoantiendien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\tracuuhoadon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ghichuso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\webcskh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo_cskh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\thanhtoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\callcskh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

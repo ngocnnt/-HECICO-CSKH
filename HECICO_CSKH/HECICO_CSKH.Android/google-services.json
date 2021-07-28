@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194038114298",
+    "project_id": "cskh-hecico",
+    "storage_bucket": "cskh-hecico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194038114298:android:546fa5c347813186072643",
+        "android_client_info": {
+          "package_name": "com.companyname.hecico_cskh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194038114298-ncmqae6hvq1p58ijv2o9kjop6ugchlpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVztDjdFILzOUtuMhNTDikhfs3x2K6YCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194038114298-ncmqae6hvq1p58ijv2o9kjop6ugchlpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

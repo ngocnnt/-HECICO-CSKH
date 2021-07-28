@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HECICO_CSKH.Views.HomePage"         
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"   
+              xmlns:helper="clr-namespace:HECICO_CSKH.Helper"                   
+              BackgroundColor="White"
+              Shell.NavBarIsVisible="False"
+             xmlns:vm="clr-namespace:HECICO_CSKH.ViewModels" xmlns:sfcombobx="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms">
+
+    <AbsoluteLayout>
+        <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1" RowDefinitions="auto,auto,*" >
+            <cv:CarouselViewControl  x:Name="viewImage" Position="1" ShowIndicators="True" IndicatorsShape="Circle" IndicatorsTintColor="LightGray" 
+                                CurrentPageIndicatorTintColor="Red" Orientation="Horizontal" InterPageSpacing="10" 
+                                 
+                                ItemsSource="{Binding ListImage, Mode=TwoWay}"   HorizontalOptions="FillAndExpand" HeightRequest= "{OnIdiom Tablet=300, Phone=150}"
+                                VerticalOptions="StartAndExpand" AnimateTransition="True" >
+                <cv:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding ImagePath}"   Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+                    </DataTemplate>
+                </cv:CarouselViewControl.ItemTemplate>
+
+            </cv:CarouselViewControl>
+            <Frame Padding="5" Grid.Row="1" CornerRadius="20" Margin="10,0,10,0"
+               HasShadow="False"
+               BackgroundColor="Green" >
+                <StackLayout Padding="5" Spacing="6" >
+                    <Frame Padding="10,5,5,5"  
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                   HeightRequest="{OnIdiom Tablet=100, Phone=50}">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Label Text="{Binding TEN_KHANG}" LineBreakMode="TailTruncation" MaxLines="2" TextTransform="Uppercase" FontSize="{OnIdiom Tablet=30, Phone=18}" HorizontalOptions="FillAndExpand" x:Name="txtTram" Style="{StaticResource styleLableGreen }"/>
+                            <Image HorizontalOptions="EndAndExpand">
+                                <Image.Source>
+                                    <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.TextSearch}}" Color="Green" Size="20"/>
+                                </Image.Source>
+                            </Image>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SelectKhachHangCommand}" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Label Text="{Binding Customer.DCHI_KHANG}" Style="{StaticResource styleLableWhite}"  FontSize="{OnIdiom Tablet=29, Phone=17}"
+                       HorizontalOptions="StartAndExpand"/>
+                    <Label Text="{Binding Customer.MA_KHANG}" Style="{StaticResource styleLableWhite}"  FontSize="{OnIdiom Tablet=29, Phone=17}"  />
+                    <Label Text="{Binding Customer.MA_CTO}" Style="{StaticResource styleLableWhite}"  FontSize="{OnIdiom Tablet=29, Phone=17}"  />
+
+
+                </StackLayout>
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0"  EndPoint="1,0">
+                        <GradientStop Color="Green"
+                                                      Offset="0.1"/>
+                        <GradientStop Color="#26C986"
+                                                      Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+            <ScrollView Grid.Row="2" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <Grid RowDefinitions="auto,auto,auto,*">
+                    <Ellipse   Fill="Green"
+                     WidthRequest="10" HeightRequest="10" HorizontalOptions="Center"/>
+                    <Frame Padding="5" Grid.Row="1" CornerRadius="20" Margin="10,0,10,0"  HasShadow="True" BackgroundColor="White"  >
+                        <StackLayout Padding="5"  >
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Tiền điện" TextColor="Black" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               HorizontalOptions="StartAndExpand" Padding="20,0,0,0" />
+                                <Label Text="{Binding Customer.DA_NOP}" TextColor="Red" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               FontAttributes="Italic"
+                               HorizontalOptions="End" Padding="20,0,0,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Customer.KY_THANH_TOAN}" Style="{StaticResource styleLableGreen}" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               HorizontalOptions="StartAndExpand" FontAttributes="Bold" />
+                                <Label Text="{Binding Customer.TONG_TIEN , StringFormat='{0:#,###}'}" TextColor="Red" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="End" Padding="20,0,0,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Chỉ số cuối kỳ" Style="{StaticResource styleLable}" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               HorizontalOptions="StartAndExpand" />
+                                <Label Text="Điện năng tiêu thụ"  FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               Style="{StaticResource styleLable}"
+                               HorizontalOptions="End" Padding="20,0,0,0" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Customer.CHISO_MOI, StringFormat='{0:#,###}'}" Style="{StaticResource styleLableGreen}" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="StartAndExpand" />
+                                <Label Text="{Binding Customer.DIEN_TTHU, StringFormat='{0:#,###}'}" FontSize="{OnIdiom Tablet=29, Phone=17}"
+                               FontAttributes="Bold" Style="{StaticResource styleLableGreen}"
+                               HorizontalOptions="End" Padding="20,0,0,0" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <!--<AbsoluteLayout Padding="0" Grid.Row="2"  Margin="10,5,10,0"  HeightRequest="140"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"    >
+                    <Image Source="cskh.jpg" Aspect="Fill" HeightRequest="140" HorizontalOptions="FillAndExpand" 
+                           AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1"/>
+                    <ImageButton Source="callme" AbsoluteLayout.LayoutBounds="0.88,0.95,40,40" AbsoluteLayout.LayoutFlags="PositionProportional"
+                                 BackgroundColor="Transparent" Command="{Binding CallMeCommand}"/>
+                </AbsoluteLayout>-->
+                    <AbsoluteLayout  Grid.Row="2" HeightRequest= "{OnIdiom Tablet=200, Phone=100}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10">
+                        <Image Source="thanhtoan" Opacity="0.5" Aspect="AspectFill"  HeightRequest= "{OnIdiom Tablet=300, Phone=150}" HorizontalOptions="FillAndExpand"  
+                               AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1" />
+                        <Label Text="Thanh toán tiền điện" FontSize="{OnIdiom Tablet=33, Phone=20}" FontAttributes="Bold"  Style="{StaticResource styleLableWhite}"
+                               AbsoluteLayout.LayoutBounds="0.2,0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        <AbsoluteLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenWebCommand}">
+
+                            </TapGestureRecognizer>
+                        </AbsoluteLayout.GestureRecognizers>
+                        <AbsoluteLayout.Background>
+                            <LinearGradientBrush StartPoint="0,0"  EndPoint="1,0">
+                                <GradientStop Color="Green"
+                                                      Offset="0.1"/>
+                                <GradientStop Color="#26C986"
+                                                      Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </AbsoluteLayout.Background>
+                    </AbsoluteLayout>
+
+                </Grid>
+            </ScrollView>
+           
+        </Grid>
+        <Image  Source="callcskh" Grid.Row="2" Aspect="AspectFit" BackgroundColor="Transparent" WidthRequest="{OnIdiom Phone=70 , Tablet=140}"  HeightRequest="{OnIdiom Phone=70 , Tablet=140}"
+               Margin="{OnPlatform Android='0,0,5,5' , iOS='0,0,5,80' } "
+               AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1,1"
+               >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding CallMeCommand}"/>
+            </Image.GestureRecognizers>
+        </Image>
+    </AbsoluteLayout>
+        
+
+
+</ContentPage>

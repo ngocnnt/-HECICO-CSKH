@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Shell.TabBarIsVisible="False"
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Views.Notification.ThongBaoTienDien_DaThanhToanPage">
+    <Shell.TitleView>
+        <Label Text="NỘI DUNG" HorizontalTextAlignment="Center" HorizontalOptions="Center"
+               Padding="-50,0,0,0"
+               FontSize="20"
+               FontAttributes="Bold"
+               Style="{StaticResource styleLableWhite}"
+               VerticalTextAlignment="Center"></Label>
+    </Shell.TitleView>
+    <Grid>
+        <Frame BorderColor="Black" Margin="10"  BackgroundColor="White">
+            <StackLayout >
+                <Label Text="THÔNG BÁO THANH TOÁN" FontSize="20"
+                   HorizontalOptions="FillAndExpand"
+                       Style="{StaticResource styleLable}"
+                       TextColor="Red"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+
+                <Label x:Name="lblKyThanhToan"  
+                        FontSize="Medium"
+                       Text="{Binding NOI_DUNG}"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   />
+                <Label  x:Name="lblGhiChu"
+                      FontSize="Medium"
+                       
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="FillAndExpand"
+                   HorizontalTextAlignment="Start"
+                   >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Truy cập "/>
+                                <Span Text="https://sinvoice.viettel.vn/tracuuhoadon"
+                                      TextColor="Blue"
+                                      TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text=" để tra cứu Hóa đơn. Mã tra cứu: " ></Span>
+                                <Span Text="{Binding KIHIEU_HDON}" FontAttributes="Bold" FontSize="Medium"></Span>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Đã thanh toán: " FontSize="Medium"                          
+                   Style="{StaticResource styleLableGreen}"
+                   HorizontalOptions="Start"          
+                       FontAttributes="Bold"
+                   />
+                    <Label Text="{Binding TONG_TIEN , StringFormat='{0:#,###}'}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"           
+                           FontAttributes="Bold"
+                   />
+                    <Label Text=" đồng" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"          
+                       FontAttributes="Bold"
+                   />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ngày thanh toán: " FontSize="Medium"                          
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start" >
+                        
+                    </Label>
+                    <Label Text="{Binding NGAY_NOP , StringFormat='{0:dd/MM/yyyy}'}" FontSize="Medium"
+                   Style="{StaticResource styleLable}"
+                   HorizontalOptions="Start"  />                     
+                  
+                </StackLayout>
+
+
+            </StackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:helper="clr-namespace:HECICO_CSKH.Helper" 
+             xmlns:sfbutton="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" 
+             xmlns:sfinputtext="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             mc:Ignorable="d"               
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Views.LoginPage"
+             >
+    <ScrollView>
+        <Grid RowDefinitions="auto,auto,*" VerticalOptions="CenterAndExpand">
+            <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="{OnIdiom Phone=200  , Tablet=400}"
+                     Grid.Row="0">
+                <Image Source="logo" Aspect="Fill" HorizontalOptions="Center"  VerticalOptions="Center"
+                   HeightRequest="{OnIdiom Phone=140  , Tablet=280}" WidthRequest="{OnIdiom Phone=140  , Tablet=280}"
+                   Margin="1,30,0,0"
+                   ></Image>
+                <Label Text="Mời quý khách hàng nhập tài khoản đã có trên web cskh để đăng nhập vào tài khoản" 
+                   Style="{StaticResource styleLable}"  FontSize="{OnIdiom Phone=14, Tablet=28}"
+                   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Row="1">
+                <StackLayout Margin="{OnPlatform Android='0,15,0,0' , iOS= '0,30,0,0' } " Spacing="20" BackgroundColor="Transparent">
+                    <sfinputtext:SfTextInputLayout  Padding="20,0,20,0"                                            
+                                               LeadingViewPosition="Inside"
+                                               HeightRequest="50"
+                                               OutlineCornerRadius="30"   
+                                               BackgroundColor="Transparent"
+                                               UnfocusedColor="Green"
+                                               FocusedColor="Green" 
+                                               ContainerType="Outlined">
+                        <Entry x:Name="txtUserID" HorizontalOptions="FillAndExpand" Style="{StaticResource styleEntryGreen}"  
+                           ClearButtonVisibility="WhileEditing" 
+                           Text="{Binding UserName, Mode=TwoWay}"
+                           FontSize="25"       
+                           Keyboard="Numeric"
+                           Placeholder="Nhập tên người dùng"
+                           VerticalTextAlignment="Center"                               
+                                       />
+                        <sfinputtext:SfTextInputLayout.LeadingView>
+                            <Image Margin="20,0,0,0"   >
+                                <Image.Source >
+                                    <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Account}}" Color="Green" Size="20"    />
+
+                                </Image.Source>
+                            </Image>
+                        </sfinputtext:SfTextInputLayout.LeadingView>
+                    </sfinputtext:SfTextInputLayout>
+                    <sfinputtext:SfTextInputLayout  Padding="20,10,20,0"                                            
+                                               LeadingViewPosition="Inside"
+                                               HeightRequest="50"
+                                               OutlineCornerRadius="30"   
+                                               BackgroundColor="Transparent"
+                                               UnfocusedColor="Green"
+                                               FocusedColor="Green"      
+                                               EnablePasswordVisibilityToggle="True"  
+                                               ContainerType="Outlined">
+                        <Entry HorizontalOptions="FillAndExpand" Style="{StaticResource styleEntryGreen}"  
+                           ClearButtonVisibility="WhileEditing"                           
+                           HorizontalTextAlignment="Start"                           
+                           IsPassword="True"
+                           FontSize="25"       
+                           Placeholder="Nhập mật khẩu"
+                           VerticalTextAlignment="Center"
+                           Text="{Binding Password, Mode=TwoWay}"
+                                       />
+                        <sfinputtext:SfTextInputLayout.LeadingView>
+                            <Image Margin="20,0,0,0" >
+                                <Image.Source >
+                                    <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Key}}" Color="Green" Size="20"
+                                                 />
+                                </Image.Source>
+                            </Image>
+                        </sfinputtext:SfTextInputLayout.LeadingView>
+                    </sfinputtext:SfTextInputLayout>
+
+                    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" Padding="30,10,30,0">
+
+                        <sfbutton:SfButton Text="Đăng nhập" Command="{Binding LoginCommand}" CornerRadius="30"                                           
+                                       VerticalOptions="CenterAndExpand" 
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="30,10,30,10"
+                                       IsEnabled ="{Binding CanLogin , Mode=TwoWay}"
+                                       Style="{StaticResource sfbutton}">
+                        </sfbutton:SfButton>
+
+                    </StackLayout>                        
+                </StackLayout >
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+  
+</ContentPage>

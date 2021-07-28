@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfcombobx="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:sfdatagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
+             xmlns:sfinputtext="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:sfbutton="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:helper="clr-namespace:HECICO_CSKH.Helper" 
+             xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             Title="LỊCH GHI CHỮ SỐ"
+             Shell.TabBarIsVisible="False"          
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Views.Search.TraCuuLichGhiChiSoPage">
+   
+    <Grid>
+        <StackLayout Margin="10">
+            <Label Text="Vui lòng chọn mã khách hàng" Style="{StaticResource styleLableGreen}" FontSize="14"/>
+            <Frame Padding="10,5,5,5"  
+                       BackgroundColor="White"
+                       CornerRadius="10"  
+                   BorderColor="{StaticResource Primary}"                           
+                   HeightRequest="60">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                    <Label Text="{Binding TEN_KHANG}" FontSize="18" LineBreakMode="TailTruncation" MaxLines="2" TextTransform="Uppercase" HorizontalOptions="FillAndExpand" x:Name="txtTram" Style="{StaticResource styleLableGreen }"/>
+                    <Image HorizontalOptions="EndAndExpand">
+                        <Image.Source>
+                            <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.TextSearch}}" Color="Green" Size="20"/>
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SelectKhachHangCommand}" />
+                </Frame.GestureRecognizers>
+            </Frame>
+           
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,20">
+                <sfinputtext:SfTextInputLayout Hint="Từ ngày"  
+                                               IsHintAlwaysFloated="True"
+                                               LeadingViewPosition="Inside"
+                                               HeightRequest="50"            
+                                               HorizontalOptions="FillAndExpand"
+                                               ContainerType="Outlined">
+                    <DatePicker Date="{Binding FromDate , Mode=TwoWay }" 
+                            Style="{StaticResource styleDatePicker}"
+                                WidthRequest="100"
+                                
+                            HorizontalOptions="FillAndExpand"/>
+                    <sfinputtext:SfTextInputLayout.LeadingView>
+                        <Image>
+                            <Image.Source>
+                                <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Calendar}}" Color="{StaticResource Primary}"
+                                                 Size="25"/>
+                            </Image.Source>
+                        </Image>
+                    </sfinputtext:SfTextInputLayout.LeadingView>
+
+                </sfinputtext:SfTextInputLayout>
+                <sfinputtext:SfTextInputLayout Hint="Đến ngày" 
+                                               IsHintAlwaysFloated="True"
+                                               LeadingViewPosition="Inside"
+                                               HeightRequest="50"
+                                               HorizontalOptions="FillAndExpand"                                                
+                                               ContainerType="Outlined">
+                    <DatePicker Date="{Binding ToDate , Mode=TwoWay}"   
+                            Style="{StaticResource styleDatePicker}"
+                                WidthRequest="100"
+                            HorizontalOptions="FillAndExpand" />
+                    <sfinputtext:SfTextInputLayout.LeadingView>
+                        <Image>
+                            <Image.Source>
+                                <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Calendar}}" Color="{StaticResource Primary}"
+                                                 Size="25"/>
+                            </Image.Source>
+                        </Image>
+                    </sfinputtext:SfTextInputLayout.LeadingView>
+                </sfinputtext:SfTextInputLayout>
+                
+
+            </StackLayout>
+            <sfbutton:SfButton Text="Tra cứu" Command="{Binding SearchCommand}" CornerRadius="10"       
+                               WidthRequest="200"
+                                       VerticalOptions="CenterAndExpand" 
+                                       HorizontalOptions="CenterAndExpand"
+                                       Padding="30,10,30,10"                                      
+                                       Style="{StaticResource sfbutton}">
+            </sfbutton:SfButton>
+            <ListView ItemsSource="{Binding ListTraCuu, Mode=TwoWay}"
+                      HasUnevenRows="True"   
+                      Footer=""
+                      SelectionMode="None"
+                      SeparatorVisibility="None"
+                      BackgroundColor="White"                        
+                      IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <AbsoluteLayout Margin="0,0,0,15" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                                    HeightRequest="{OnIdiom Tablet=150, Phone=85}">
+                                    <Image Source="ghichuso" Aspect="Fill"  HeightRequest= "{OnIdiom Tablet=150, Phone=85}" HorizontalOptions="FillAndExpand"
+                                               VerticalOptions="StartAndExpand" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1"/>
+                                    <Label Text="{Binding NGAY_GCS ,StringFormat='{0:dd/MM/yyyy}'}"  FontSize="{OnIdiom Phone=18, Tablet=30}" FontAttributes="Bold" Style="{StaticResource styleLableWhite}" 
+                                           AbsoluteLayout.LayoutBounds="{OnPlatform Android='0.1,0.67', iOS='0.1,0.65'}"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                                    <Label Text="{Binding THANG}" FontSize="{OnIdiom Phone=18, Tablet=30}" FontAttributes="Bold" Style="{StaticResource styleLableGreen}" 
+                                           AbsoluteLayout.LayoutBounds="{OnPlatform Android='0.53,0.77', iOS='0.53,0.77'}"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                                    <Label Text="{Binding NAM}" FontSize="{OnIdiom Phone=18, Tablet=30}" FontAttributes="Bold"  Style="{StaticResource styleLableGreen}" 
+                                           AbsoluteLayout.LayoutBounds="{OnPlatform Android='0.77,0.77', iOS='0.77,0.77'}"
+                                           AbsoluteLayout.LayoutFlags="PositionProportional"/>                                       
+                                </AbsoluteLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

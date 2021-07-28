@@ -1,0 +1,140 @@
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.deps.json
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\ref\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.pdb
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\AppShell.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\AppInformation.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\Barcode.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\DanhSachKhachHang.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageBox.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageChangePassword.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageInternetProblem.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageYesNo.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Themes\LightTheme.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\NoInternetConnectionPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\SomethingWentWrongPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\Styles.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\HomePage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemsPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NewItemPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NotificationPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoKhacPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoNgungCapDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_ChiTietPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_DaThanhToanPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SearchPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDiemThuTienDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDienNangTieuThuPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuHoaDonDienTuPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuLichGhiChiSoPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuThongTinThanhToanPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ServicePage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SettingPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\StartupPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfoInputs.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfo.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csproj.CoreCompileInputs.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\XamlC.stamp
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\ref\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.pdb
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csprojAssemblyReference.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.deps.json
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\ref\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.pdb
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csprojAssemblyReference.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\AppShell.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\AppInformation.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\Barcode.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\DanhSachKhachHang.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageBox.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageChangePassword.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageInternetProblem.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageYesNo.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Themes\LightTheme.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\AboutPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\NoInternetConnectionPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\SomethingWentWrongPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\Styles.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\HomePage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemsPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NewItemPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NotificationPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoKhacPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoNgungCapDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_ChiTietPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_DaThanhToanPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SearchPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDiemThuTienDienPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDienNangTieuThuPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuHoaDonDienTuPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuLichGhiChiSoPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuThongTinThanhToanPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ServicePage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SettingPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\StartupPage.xaml.g.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfoInputs.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfo.cs
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csproj.CoreCompileInputs.cache
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\XamlC.stamp
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\ref\HECICO_CSKH.dll
+D:\SOURCE CODE\GIT_HUB_EMEC\CSKH_HECICO V2\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.pdb
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.deps.json
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.dll
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\ref\HECICO_CSKH.dll
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\bin\Release\netstandard2.0\HECICO_CSKH.pdb
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csprojAssemblyReference.cache
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\App.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\AppShell.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\AppInformation.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\Barcode.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\ChonThangNam.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\DanhSachKhachHang.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageBox.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageChangePassword.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageInternetProblem.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Dialog\MessageYesNo.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Themes\LightTheme.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\AboutPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\NoInternetConnectionPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\SomethingWentWrongPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ErrorandEmpty\Styles.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\HomePage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ItemsPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\LoginPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NewItemPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\NotificationPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoKhacPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoNgungCapDienPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDienPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_ChiTietPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Notification\ThongBaoTienDien_DaThanhToanPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SearchPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\BieuDoDienNangTieuThu.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDiemThuTienDienPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuDienNangTieuThuPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuHoaDonDienTuPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuLichGhiChiSoPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\Search\TraCuuThongTinThanhToanPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\ServicePage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\SettingPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\Views\StartupPage.xaml.g.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfoInputs.cache
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.AssemblyInfo.cs
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.csproj.CoreCompileInputs.cache
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\XamlC.stamp
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.dll
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\ref\HECICO_CSKH.dll
+E:\TUAN_SOURCE\BUILD APP CENTER\CSKH_HECICO\HECICO_CSKH\HECICO_CSKH\obj\Release\netstandard2.0\HECICO_CSKH.pdb

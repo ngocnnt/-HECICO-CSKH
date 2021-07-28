@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfcombobx="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:sfdatagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
+             xmlns:sfinputtext="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:sfbutton="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:helper="clr-namespace:HECICO_CSKH.Helper" 
+             xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             Title="THÔNG TIN THANH TOÁN TIỀN ĐIỆN"
+             Shell.TabBarIsVisible="False"             
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Views.Search.TraCuuThongTinThanhToanPage">
+    <Grid>
+        <StackLayout Margin="10">
+            <Label Text="Vui lòng chọn mã khách hàng" Style="{StaticResource styleLableGreen}" FontSize="14"/>
+            <Frame Padding="10,5,5,5"  
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                   BorderColor="{StaticResource Primary}"
+                   HeightRequest="60">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                    <Label Text="{Binding TEN_KHANG}" FontSize="18" LineBreakMode="TailTruncation" MaxLines="2" TextTransform="Uppercase" HorizontalOptions="FillAndExpand" x:Name="txtTram" Style="{StaticResource styleLableGreen }"/>
+                    <Image HorizontalOptions="EndAndExpand">
+                        <Image.Source>
+                            <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.TextSearch}}" Color="Green" Size="20"/>
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SelectKhachHangCommand}" />
+                </Frame.GestureRecognizers>
+            </Frame>           
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="10,0,10,10">
+
+                <Grid RowDefinitions="auto" Margin="0,10,0,0" BackgroundColor="White">
+                    <Frame Padding="12"
+                           CornerRadius="5"
+                           BackgroundColor="White"
+                    BorderColor="{StaticResource Primary}"
+                    HasShadow="False">
+                        <StackLayout Orientation="Horizontal">
+                            <Image>
+                                <Image.Source>
+                                    <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Calendar}}" Color="{StaticResource Primary}"
+                                                 Size="25"/>
+                                </Image.Source>
+                            </Image>
+                            <Label Text="{Binding FromDate , StringFormat='{0:MM/yyyy}'}" FontSize="17"
+                               TextColor="{StaticResource Primary}"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SelectTuThangCommand}"  />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Label Text=" Từ tháng "
+                FontSize="12"
+                TextColor="{StaticResource Primary}"
+                BackgroundColor="white"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="40,-10,0,0"/>
+                </Grid>
+                <Grid RowDefinitions="auto" Margin="0,10,0,0" BackgroundColor="White">
+                    <Frame Padding="12"
+                           CornerRadius="5"
+                           BackgroundColor="White"
+                    BorderColor="{StaticResource Primary}"
+                    HasShadow="False">
+                        <StackLayout Orientation="Horizontal">
+                            <Image>
+                                <Image.Source>
+                                    <FontImageSource FontFamily="UserIcons" Glyph="{Binding Source={x:Static helper:FontIconClass.Calendar}}" Color="{StaticResource Primary}"
+                                                 Size="25"/>
+                                </Image.Source>
+                            </Image>
+                            <Label Text="{Binding ToDate , StringFormat='{0:MM/yyyy}'}"  FontSize="17"
+                               TextColor="{StaticResource Primary}"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SelectDenThangCommand}"  />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Label Text=" Đến tháng "
+                FontSize="12"
+                TextColor="{StaticResource Primary}"
+                BackgroundColor="white"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Margin="40,-10,0,0"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <sfbutton:SfButton Text="Tra cứu" Command="{Binding SearchCommand}"   
+                                WidthRequest="150"
+                                VerticalOptions="CenterAndExpand" 
+                                HorizontalOptions="CenterAndExpand"
+                                Style="{StaticResource sfbutton}"
+                                Padding="0,10,0,10"
+                                FontAttributes="None"
+                                FontSize="Medium"
+                                >
+                </sfbutton:SfButton>                    
+            </StackLayout>
+            
+            <ListView ItemsSource="{Binding ListTraCuu, Mode=TwoWay}"
+                      HasUnevenRows="True"   
+                      Footer=""
+                      SelectionMode="None"
+                      SeparatorVisibility="None"
+                      BackgroundColor="White"
+                      IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Margin="0,0,0,20">
+                                    <Frame Padding="10,3,0,3"
+                                           HasShadow="False"                                           
+                                           CornerRadius="5">
+                                        <Label >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Tháng " TextColor="White"  FontSize="15"/>
+                                                    <Span Text="{Binding THANG}" TextColor="White"  FontSize="15"/>
+                                                    <Span Text="/" TextColor="White"  FontSize="15"/>
+                                                    <Span Text="{Binding NAM}" TextColor="White"  FontSize="15"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Frame.Background>
+                                            <LinearGradientBrush StartPoint="0,0"  EndPoint="1,0">
+                                                <GradientStop Color="Green"
+                                                      Offset="0.1"/>
+                                                <GradientStop Color="#26C986"
+                                                      Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </Frame.Background>
+                                    </Frame>
+                                    <Grid ColumnDefinitions="2.5*,2.5*,2*,3*" RowDefinitions="auto,auto" 
+                                          HorizontalOptions="FillAndExpand" RowSpacing="0">
+                                        <BoxView Grid.ColumnSpan="4" Grid.Row="0" HeightRequest="1" HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="0"  WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="1"  WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="2"  WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="3"  WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="3"  WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="End"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.ColumnSpan="4" Grid.Row="1" HeightRequest="1" HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <Label Text="Tổng tiền" Style="{StaticResource styleLableGreen}" 
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+                                        <Label Text="Tổng nợ" Grid.Column="1" Style="{StaticResource styleLableGreen}"   
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+                                        <Label Text="Trạng thái nợ" Grid.Column="2" Style="{StaticResource styleLableGreen}"   
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+                                        <Label Text="Chi tiết nộp tiền" Grid.Column="3" Style="{StaticResource styleLableGreen}"    
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+
+                                        <BoxView Grid.ColumnSpan="4" Grid.Row="1" HeightRequest="1" HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="0" Grid.Row="1" WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="1" Grid.Row="1" WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="2" Grid.Row="1" WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="3" Grid.Row="1" WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="Start"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.Column="3" Grid.Row="1" WidthRequest="1" VerticalOptions="FillAndExpand"
+                                                 HorizontalOptions="End"
+                                                 BackgroundColor="{StaticResource Primary}"/>
+                                        <BoxView Grid.ColumnSpan="4" Grid.Row="1" HeightRequest="1" HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="End"
+                                                   BackgroundColor="{StaticResource Primary}"/>
+
+                                        <Label Text="{Binding TONG_TIEN,StringFormat='{0:#,###}'}" Grid.Row="1" Style="{StaticResource styleLableGreen}" 
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+                                        <Label Style="{StaticResource styleLableGreen}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span  Text="{Binding TONG_NO,StringFormat='{0:#,##0}'}"   />
+                                                    <Span Text="đ"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                            
+                                        <Label Text="{Binding TTHAI_NO}" Grid.Column="2" Grid.Row="1" Style="{StaticResource styleLableGreen}"    
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+                                        <Label Text="{Binding CTIET_NOP}" Grid.Column="3" Grid.Row="1" Style="{StaticResource styleLableGreen}"   
+                                               VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                                               HorizontalTextAlignment="Center" Padding="5" FontSize="14"/>
+
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfbutton="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" 
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:sfDatagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+              xmlns:sfcombox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:themes = "clr-namespace:HECICO_CSKH.Themes;assembly=HECICO_CSKH" 
+             xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:styles="clr-namespace:HECICO_CSKH.Views.ErrorAndEmpty"
+             x:Class="HECICO_CSKH.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <themes:LightTheme />
+                <syncTheme:SyncfusionThemeDictionary>
+                    <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                        <ResourceDictionary>
+                            <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String>
+                            <Color x:Key="SfTextInputLayoutFloatedHintUnfocusedColor">#0c832f</Color>
+                            <Color x:Key="SfTextInputLayoutLineColor">#0c832f</Color>
+                            <Color x:Key="SfTextInputLayoutHelperTextColor">#0c832f</Color>
+                            <Color x:Key="SfTextInputLayoutCounterLabelColor">#0c832f</Color>
+                        </ResourceDictionary>
+                    </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                </syncTheme:SyncfusionThemeDictionary>
+            </ResourceDictionary.MergedDictionaries >
+            <Color x:Key="Primary">#0c832f</Color>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            
+            <gradient:SfLinearGradientBrush x:Key="Gradientbutoon">
+                <gradient:SfLinearGradientBrush.GradientStops>
+                    <gradient:SfGradientStop Color="#0c832f" Offset="0"/>
+                    <gradient:SfGradientStop Color="#26C986" Offset="1"/>
+                </gradient:SfLinearGradientBrush.GradientStops>
+            </gradient:SfLinearGradientBrush>
+            <Style TargetType="sfcombox:SfComboBox" x:Key="styleCombobox">
+                <Setter Property="TextColor" Value="{StaticResource Primary}"></Setter>
+                <Setter Property="ShowClearButton" Value="True"></Setter>
+                <Setter Property="BorderColor" Value="#1976d2"></Setter>
+                <!--<Setter Property="BorderColor" Value="White"></Setter>-->
+                <Setter Property="TextSize" Value="18"></Setter>
+                <Setter Property="FontFamily" Value="Tahoma"></Setter>
+                <Setter Property="SuggestionMode" Value="Contains"></Setter>
+                <Setter Property="MultiSelectMode" Value="None"></Setter>
+                <Setter Property="NoResultsFoundTextColor" Value="Red"></Setter>
+                <Setter Property="HighlightedTextColor" Value="Red"></Setter>
+                <Setter Property="AllowFiltering" Value="True"></Setter>
+                <Setter Property="ClearButtonColor" Value="Red"></Setter>
+                <Setter Property="WatermarkColor" Value="Gray"></Setter>
+            </Style>
+            <Style TargetType="Label" x:Key="styleLableWhite">
+                <Setter Property="FontFamily" Value="Tahoma"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <Style TargetType="Label" x:Key="styleLable">
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <Style TargetType="Label" x:Key="styleLableGreen">
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <Style TargetType="Entry" x:Key="styleEntryWhite">
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style TargetType="Entry" x:Key="styleEntryGreen">
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+            </Style>
+            <Style TargetType="SearchBar" x:Key="styleSearchBar">
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+            </Style>
+            <Style TargetType="sfbutton:SfButton" x:Key="sfbutton">
+                <Setter Property="BackgroundGradient" Value="{StaticResource Gradientbutoon}"></Setter>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+            <Style TargetType="sfbutton:SfButton" x:Key="sfbuttonCancel">
+                <Setter Property="BackgroundColor" Value="Red"></Setter>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+            <Style TargetType="DatePicker" x:Key="styleDatePicker">
+                <Setter Property="TextColor"    Value="{StaticResource Primary}"/>
+                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="FontSize"  Value="16"     />
+            </Style>
+            
+            <Style TargetType="sfDatagrid:SfDataGrid" x:Key="styleDataGrid">
+                <Setter Property="CanUseViewFilter" Value="True"></Setter>
+                <Setter Property="AllowSorting" Value="True"></Setter>
+                <Setter Property="AllowDraggingRow" Value="True"></Setter>
+                <Setter Property="AllowDraggingColumn" Value="True"></Setter>
+                <Setter Property="SelectionMode" Value="Single"></Setter>
+                <Setter Property="AutoExpandGroups" Value="True"></Setter>
+                <Setter Property="AllowTriStateSorting" Value="True"></Setter>
+                <Setter Property="AllowDiagonalScrolling" Value="True"></Setter>
+                <Setter Property="VerticalOverScrollMode" Value="None"></Setter>
+                <Setter Property="AutoGenerateColumns" Value="False"></Setter>
+                <Setter Property="ColumnSizer" Value="LastColumnFill"></Setter>
+                <Setter Property="AllowResizingColumn" Value="True"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

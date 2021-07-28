@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="HECICO_CSKH.Dialog.DanhSachKhachHang">
+    <ContentPage.Content>
+        <StackLayout Margin="20,30,20,0">
+            <Label Text="CHỌN THÔNG TIN KHÁCH  HÀNG" HorizontalOptions="Center" HorizontalTextAlignment="Center" Style="{StaticResource styleLableGreen}" FontSize="20" FontAttributes="Bold"/>
+            <ListView ItemsSource="{Binding ListData,Mode=TwoWay}"
+                  HasUnevenRows="True"
+                  SeparatorVisibility="None"
+                  ItemSelected="ListView_ItemSelected"
+                  x:Name="lstView"
+                      BackgroundColor="White"
+                  >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="10">
+                                <Label  Style="{StaticResource styleLableGreen}" FontSize="17">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding MA_KHANG}" />
+                                            <Span Text=" - " />
+                                            <Span Text="{Binding TEN_KHANG}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <BoxView BackgroundColor="{StaticResource Primary}" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
